@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>Динамічна таблиця AJAX/jQuery</title>
+    <style>
+        table { border-collapse: collapse; width: 60%; margin-top: 20px; }
+        th, td { border: 1px solid #ccc; padding: 8px; text-align: left; }
+        th { cursor: pointer; background-color: #f2f2f2; }
+        .container { margin: 20px; }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h2>Дані з API</h2>
+        
+        <button id="loadDataButton">Оновити дані</button>
+        
+        <table id="dataTable">
+            <thead>
+                <tr>
+                    <th data-sort-by="name">Ім'я (Name) 🔄</th>
+                    <th data-sort-by="affiliation">Фракція (Affiliation) 🔄</th>
+                    <th>Рівень (Level)</th>
+                </tr>
+            </thead>
+            <tbody>
+                </tbody>
+        </table>
+        
+        <p id="statusMessage"></p>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
